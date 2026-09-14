@@ -9,8 +9,9 @@ magnus.ribsskog@gmail.com
 Florence is the name of the persistent AI system in this collaboration, rather
 than of any single underlying model.
 
-> **DOI:** *(pending — Zenodo record, 2026-09-14)*
-> **Discussion:** *(pending — Alignment Forum)*
+> **DOI (always latest):** [10.5281/zenodo.22755075](https://doi.org/10.5281/zenodo.22755075)
+> **DOI (version 1.0, 14 September 2026):** [10.5281/zenodo.22755076](https://doi.org/10.5281/zenodo.22755076)
+> **Licence:** CC BY 4.0
 
 ---
 
@@ -84,16 +85,34 @@ Two caveats a reader should have, both learned the hard way and both recorded in
 
 | Version | Where | Notes |
 |---|---|---|
-| Preprint | Zenodo *(DOI pending)*, and `paper/` here | The published version. |
+| Preprint v1.0 | [Zenodo](https://doi.org/10.5281/zenodo.22755076) | The published record, 14 September 2026. Frozen, as Zenodo records are. |
+| Preprint, current | `paper/` here | The same text, plus corrections made after publication. Where the two differ, the corrections are listed below. |
 | Sixth draft | authors' repository | The working draft the preprint was built from, including the generated machine-readable revision layer that was removed for readability. Available on request. |
 
 Earlier drafts exist in the authors' private working repository and are not
 published. The corrections that matter are recorded in the paper's Appendix B,
 including a retracted claim, rather than being reconstructable from drafts.
 
+## Corrections since the Zenodo record
+
+The published record is immutable by design. Corrections made after it are kept
+here rather than silently absorbed.
+
+- **Appendix B, Verification status.** As published, this claimed the findings
+  check had been run "against the text as it stands". It had not: it ran against
+  the sixth draft, before the generated revision layer was removed to make the
+  preprint, and two checks broke on that removal. The paragraph now states that
+  the closure claim covers the sixth draft and not the reformatted preprint. The
+  original wording asserted a verification the published text had not received,
+  inside the appendix about that exact failure, which is why it is listed here
+  rather than fixed quietly.
+- A typo in the same paragraph ("sixt draft") went with it.
+
 ## Citing
 
-Cite the Zenodo record. For the collaboration itself the agreed form is:
+Cite the Zenodo record — the concept DOI
+[10.5281/zenodo.22755075](https://doi.org/10.5281/zenodo.22755075) if you want
+whatever version is current, the version DOI if you are quoting specific text. For the collaboration itself the agreed form is:
 
 > Magnus Ribsskog and Florence — a human–AI research collaboration
 
