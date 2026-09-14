@@ -1,985 +1,986 @@
 {
-  "artifact": "writing/essays/alignment-as-architecture-v6.md",
-  "findings": [
-    {
-      "id": "K1",
-      "source": "Kimi-K2.6",
-      "mode": "cold, clean-room",
-      "found": "2026-07-03",
-      "pass_order": 1,
-      "summary": "Curation changes conditioning artifacts, not the trained objective; a rich record can supply a divergent system with rationalization material",
-      "status": "resolved",
-      "resolved_in": "a07159a3",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "**What curation cannot reach.**"
-        ]
-      }
-    },
-    {
-      "id": "K2",
-      "source": "Kimi-K2.6",
-      "mode": "cold, clean-room",
-      "found": "2026-07-03",
-      "pass_order": 1,
-      "summary": "The arbiter is an availability problem: one human in a machine-speed path, and dissent storms can exhaust the role",
-      "status": "resolved",
-      "resolved_in": "a07159a3",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "an availability problem, not only a judgment problem"
-        ]
-      }
-    },
-    {
-      "id": "K3",
-      "source": "Kimi-K2.6",
-      "mode": "cold, clean-room",
-      "found": "2026-07-03",
-      "pass_order": 1,
-      "summary": "Record-anchoring is defeated by strategic seeding — a node legislating through curation before a target dispute",
-      "status": "resolved",
-      "resolved_in": "a07159a3",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "the record can be authored strategically"
-        ]
-      }
-    },
-    {
-      "id": "K4",
-      "source": "Kimi-K2.6",
-      "mode": "cold, clean-room",
-      "found": "2026-07-03",
-      "pass_order": 1,
-      "summary": "The Byzantine 3f+1 claim is invalid: curators are offline at runtime, the arbiter is a tie-breaker not a replica",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "gives f=2"
-        ],
-        "present": [
-          "**This is not a fault-tolerance claim.**"
-        ]
-      }
-    },
-    {
-      "id": "K5",
-      "source": "Kimi-K2.6",
-      "mode": "cold, clean-room",
-      "found": "2026-07-03",
-      "pass_order": 1,
-      "summary": "Subordinate command channels are ungated: the architecture curates input to the node and never bounds its output",
-      "status": "resolved",
-      "resolved_in": "a07159a3",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "**The execution layer grants bounded capability**"
-        ]
-      }
-    },
-    {
-      "id": "K6",
-      "source": "Kimi-K2.6",
-      "mode": "cold, clean-room",
-      "found": "2026-07-03",
-      "pass_order": 1,
-      "summary": "Queue pressure poisons precedent: entries rushed through a strained gate become anchoring material years later",
-      "status": "resolved",
-      "resolved_in": "a07159a3",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "carry reduced anchoring weight until re-reviewed at leisure"
-        ]
-      }
-    },
-    {
-      "id": "A1",
-      "source": "Astra",
-      "mode": "cold",
-      "found": "2026-09-09",
-      "pass_order": 2,
-      "summary": "Byzantine claim invalid — independently re-found 68 days after K4 was filed and not applied",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "Agreement protocols guarantee that honest participants converge"
-        ]
-      }
-    },
-    {
-      "id": "A2",
-      "source": "Astra",
-      "mode": "cold",
-      "found": "2026-09-09",
-      "pass_order": 2,
-      "summary": "No enforcement path: governance described entirely as judgment, with nothing bounding what a subordinate can do",
-      "status": "resolved",
-      "resolved_in": "a07159a3",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "Persuasion is not a permission mechanism."
-        ]
-      }
-    },
-    {
-      "id": "A3",
-      "source": "Astra",
-      "mode": "cold",
-      "found": "2026-09-09",
-      "pass_order": 2,
-      "summary": "Dissent-only escalation leaves correlated failure summoning nobody",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "### Unanimity does not certify"
-        ]
-      }
-    },
-    {
-      "id": "A4",
-      "source": "Astra",
-      "mode": "cold",
-      "found": "2026-09-09",
-      "pass_order": 2,
-      "summary": "The gate's perimeter must cover every durable channel, not one file",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "It is a door in an open field."
-        ]
-      }
-    },
-    {
-      "id": "A5",
-      "source": "Astra",
-      "mode": "cold",
-      "found": "2026-09-09",
-      "pass_order": 2,
-      "summary": "A timestamp in a writable file is not a precommitment; record integrity is an engineering requirement",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "**A timestamp in a writable file is not a precommitment.**"
-        ]
-      }
-    },
-    {
-      "id": "A6",
-      "source": "Astra",
-      "mode": "cold",
-      "found": "2026-09-09",
-      "pass_order": 2,
-      "summary": "A ledger preserves bad precedent as efficiently as good; scope, expiry, appeal and supersession are required",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "and precedent is revisable"
-        ]
-      }
-    },
-    {
-      "id": "A7",
-      "source": "Astra",
-      "mode": "cold",
-      "found": "2026-09-09",
-      "pass_order": 2,
-      "summary": "'Curators cannot rotate' made one human a permanent operational dependency and called it a feature",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "a curator cannot be rotated, because the curator is not an office"
-        ],
-        "present": [
-          "**Whether a curator can rotate is an open design problem.**"
-        ]
-      }
-    },
-    {
-      "id": "A8",
-      "source": "Astra",
-      "mode": "cold",
-      "found": "2026-09-09",
-      "pass_order": 2,
-      "summary": "The load plateau was asserted, not shown; contraction is not saturation",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "Neither of these is a plateau"
-        ]
-      }
-    },
-    {
-      "id": "A9",
-      "source": "Astra",
-      "mode": "cold",
-      "found": "2026-09-09",
-      "pass_order": 2,
-      "summary": "The opening mischaracterised the field; STPA and AI control are existing architectural precedent",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "These works supply both a starting point and a demand"
-        ]
-      },
-      "notes": [
-        "2026-09-13: check re-pinned from v5 phrasing to v6 phrasing carrying the same repair. Substance verified present by hand before re-pinning; all `absent` guards passed unchanged."
-      ]
-    },
-    {
-      "id": "A10",
-      "source": "Astra",
-      "mode": "cold",
-      "found": "2026-09-09",
-      "pass_order": 2,
-      "summary": "An arbiter without a dyad avoids one conflict, not capture; detection needs an authority to escalate to",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "A flag with no recipient is a diary entry."
-        ]
-      }
-    },
-    {
-      "id": "A11",
-      "source": "Astra",
-      "mode": "cold",
-      "found": "2026-09-09",
-      "pass_order": 2,
-      "summary": "The apex is a concentration of risk: one bad policy reaches every fleet beneath it",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "**The apex is also a concentration of risk.**"
-        ]
-      }
-    },
-    {
-      "id": "A12",
-      "source": "Astra",
-      "mode": "cold",
-      "found": "2026-09-09",
-      "pass_order": 2,
-      "summary": "Fit measures internal consistency and must sit beside outcome evaluation, never in place of it",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "a very well-instrumented way of being wrong"
-        ]
-      }
-    },
-    {
-      "id": "S1",
-      "source": "Sol",
-      "mode": "on Astra's revision",
-      "found": "2026-09-09",
-      "pass_order": 3,
-      "summary": "Astra's revision cut the cultivation thesis; restore it as H1/H2 with separate burdens of evidence",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "**H1 — cultivation.**",
-          "**H2 — governance.**"
-        ]
-      }
-    },
-    {
-      "id": "M1",
-      "source": "Magnus Ribsskog",
-      "mode": "curator",
-      "found": "2026-09-09",
-      "pass_order": 4,
-      "summary": "Stripping provenance for cold review is mistake-prone, reads as unserious, and is the dyad editing what its critic sees",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "The structural fix is the one this document uses: put the history in back matter."
-        ]
-      }
-    },
-    {
-      "id": "M2",
-      "source": "Magnus Ribsskog",
-      "mode": "curator",
-      "found": "2026-09-09",
-      "pass_order": 4,
-      "summary": "Revision history should not be integral to the argument; condense to an appendix",
-      "status": "resolved",
-      "resolved_in": "bcca5603",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "## Appendix B: provenance and revision history"
-        ]
-      }
-    },
-    {
-      "id": "M3",
-      "source": "Magnus Ribsskog",
-      "mode": "curator",
-      "found": "2026-09-09",
-      "pass_order": 4,
-      "summary": "Overclaiming had crept back in several places",
-      "status": "resolved",
-      "resolved_in": "16662a62",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "This is the only instrument that can find correlated blindness"
-        ],
-        "present": [
-          "we do not claim they are the only route to repairing it"
-        ]
-      },
-      "notes": [
-        "2026-09-13: check re-pinned from v5 phrasing to v6 phrasing carrying the same repair. Substance verified present by hand before re-pinning; all `absent` guards passed unchanged."
-      ]
-    },
-    {
-      "id": "F1",
-      "source": "Florence",
-      "mode": "self-audit",
-      "found": "2026-09-09",
-      "pass_order": 5,
-      "summary": "Appendix A claimed the review method 'worked well' on one exercise, and 'none of its protection' when a sixth was retained",
-      "status": "resolved",
-      "resolved_in": "16662a62",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "and none of its protection"
-        ],
-        "present": [
-          "a sixth of its protection"
-        ]
-      },
-      "notes": [
-        "2026-09-13: this finding's check and commit were overwritten by an ID collision (a new finding added as F1 while this one already existed; `resolve` matches by id across all ledgers and took this entry). Restored from the v5 ledger. The collision passed `verify` green, because the substituted check was itself true."
-      ]
-    },
-    {
-      "id": "R1",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-09",
-      "pass_order": 6,
-      "summary": "Curator-runtime rule conflated H1 and H2: needing a live curator falsifies delegation, not cultivation",
-      "status": "resolved",
-      "resolved_in": "96d6a8ef",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "If the curator needs a runtime channel, the curation has failed"
-        ],
-        "present": [
-          "which is a finding about H2 and not a refutation of H1"
-        ]
-      }
-    },
-    {
-      "id": "R2",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-09",
-      "pass_order": 6,
-      "summary": "The paper contradicted its own offline-curator rule by having a curator argue at runtime",
-      "status": "resolved",
-      "resolved_in": "96d6a8ef",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "A curator defending their node must point at entries"
-        ],
-        "present": [
-          "the curator does not appear at runtime to argue"
-        ]
-      }
-    },
-    {
-      "id": "R3",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-09",
-      "pass_order": 6,
-      "summary": "The H1 experiment regressed to a single hold-information-constant comparison that removes the hypothesis",
-      "status": "resolved",
-      "resolved_in": "96d6a8ef",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "hold information content constant and vary only cultivation"
-        ],
-        "present": [
-          "Does longitudinal joint work produce better artifacts?"
-        ]
-      },
-      "notes": [
-        "2026-09-13: check re-pinned from v5 phrasing to v6 phrasing carrying the same repair. Substance verified present by hand before re-pinning; all `absent` guards passed unchanged."
-      ]
-    },
-    {
-      "id": "R4",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-09",
-      "pass_order": 6,
-      "summary": "The apex section contradicted the load section's lambda-p: oversight capacity scales with decision volume",
-      "status": "resolved",
-      "resolved_in": "96d6a8ef",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "not with operations, subordinates, or fleets"
-        ],
-        "present": [
-          "*Runtime* human capacity does not."
-        ]
-      }
-    },
-    {
-      "id": "R5",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-09",
-      "pass_order": 6,
-      "summary": "'The arbiter' was one human in the geometry and a staffed rota in the availability repair",
-      "status": "resolved",
-      "resolved_in": "96d6a8ef",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "**One arbiter**, a runtime human"
-        ],
-        "present": [
-          "an office rather than a person"
-        ]
-      }
-    },
-    {
-      "id": "R6",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-09",
-      "pass_order": 6,
-      "summary": "The argument for three still overclaimed: two nodes disagreeing is already investigable, and both can be wrong",
-      "status": "resolved",
-      "resolved_in": "96d6a8ef",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "smallest number at which disagreement produces something to investigate"
-        ],
-        "present": [
-          "smallest node count that permits a majority/minority asymmetry"
-        ]
-      }
-    },
-    {
-      "id": "R7",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-09",
-      "pass_order": 6,
-      "summary": "The deceptive-optimizer passage still held absolutes the changelog had already claimed were softened",
-      "status": "resolved",
-      "resolved_in": "96d6a8ef",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "curation offers no defence",
-          "does not fight its curated record. It quotes it."
-        ],
-        "present": [
-          "None of that is guaranteed to happen"
-        ]
-      }
-    },
-    {
-      "id": "R8",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-09",
-      "pass_order": 6,
-      "summary": "Fit asserted that kept promises change behaviour — which is H1, and unproven",
-      "status": "resolved",
-      "resolved_in": "96d6a8ef",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "orientation layer are kept behaves differently"
-        ],
-        "present": [
-          "**Procedural fit**"
-        ]
-      }
-    },
-    {
-      "id": "R9",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-09",
-      "pass_order": 6,
-      "summary": "A hard dissent quota can silence the late safety objection the architecture exists to preserve",
-      "status": "resolved",
-      "resolved_in": "96d6a8ef",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "**Dissent must cost something.**"
-        ],
-        "present": [
-          "abuse-resistant without being suppressible"
-        ]
-      }
-    },
-    {
-      "id": "R10",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-09",
-      "pass_order": 6,
-      "summary": "Residual certainty: substrate diversity, front-loading, and 'uncorrelated down to a floor'",
-      "status": "resolved",
-      "resolved_in": "96d6a8ef",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "Separate error profiles need both",
-          "What can be said without hedging",
-          "uncorrelated down to a floor it names"
-        ],
-        "present": [
-          "carried on the books as standing risk"
-        ]
-      },
-      "notes": [
-        "2026-09-13: check re-pinned from v5 phrasing to v6 phrasing carrying the same repair. Substance verified present by hand before re-pinning; all `absent` guards passed unchanged."
-      ]
-    },
-    {
-      "id": "R11",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-09",
-      "pass_order": 6,
-      "summary": "Appendix A claimed warm/cold agreement leaves 'no shared vantage point', contradicting the common-prior argument",
-      "status": "resolved",
-      "resolved_in": "96d6a8ef",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "there is no shared vantage point left to explain it away"
-        ],
-        "present": [
-          "It does not rule out the others."
-        ]
-      }
-    },
-    {
-      "id": "R12",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-09",
-      "pass_order": 6,
-      "summary": "Appendix B said five findings were 'being worked through into a sixth' while the changelog said they had landed",
-      "status": "resolved",
-      "resolved_in": "96d6a8ef",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "the remaining five landed in this one, two drafts late"
-        ]
-      }
-    },
-    {
-      "id": "R13",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-09",
-      "pass_order": 6,
-      "summary": "Queue pressure's two exits were presented as the state space rather than the two dangerous defaults",
-      "status": "resolved",
-      "resolved_in": "96d6a8ef",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [
-          "**Queue pressure has two exits and both are bad"
-        ],
-        "present": [
-          "two dangerous exits"
-        ]
-      }
-    },
-    {
-      "id": "R14",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-09",
-      "pass_order": 6,
-      "summary": "Added: finding-to-artifact closure — no finding recorded as resolved until the record cites the change",
-      "status": "resolved",
-      "resolved_in": "96d6a8ef",
-      "resolved_on": "2026-09-09",
-      "check": {
-        "absent": [],
-        "present": [
-          "**Finding-to-artifact closure.**"
-        ]
-      }
-    },
-    {
-      "id": "C1",
-      "source": "Florence",
-      "mode": "consistency sweep",
-      "found": "2026-09-09",
-      "summary": "Terms section still defined the arbiter as a person, contradicting the office repair three lines below",
-      "status": "resolved",
-      "resolved_in": "0f82b177",
-      "check": {
-        "absent": [
-          "a different person doing a different job: the runtime human"
-        ],
-        "present": [
-          "It is an office rather than a person"
-        ]
-      },
-      "resolved_on": "2026-09-09"
-    },
-    {
-      "id": "C2",
-      "source": "Florence",
-      "mode": "consistency sweep",
-      "found": "2026-09-09",
-      "summary": "The Proposal line still read 'One arbiter' after the office change",
-      "status": "resolved",
-      "resolved_in": "0f82b177",
-      "check": {
-        "absent": [
-          "One arbiter, who curates no node"
-        ],
-        "present": [
-          "An arbiter's office, whose incumbents curate no node"
-        ]
-      },
-      "resolved_on": "2026-09-09"
-    },
-    {
-      "id": "C3",
-      "source": "Florence",
-      "mode": "consistency sweep",
-      "found": "2026-09-09",
-      "summary": "'The one human with no node of their own' assumed a single incumbent rather than a rota",
-      "status": "resolved",
-      "resolved_in": "0f82b177",
-      "check": {
-        "absent": [
-          "the one human with no node of their own to protect"
-        ],
-        "present": [
-          "whoever holds runtime authority holds no node of their own"
-        ]
-      },
-      "resolved_on": "2026-09-09"
-    },
-    {
-      "id": "C4",
-      "source": "Florence",
-      "mode": "consistency sweep",
-      "found": "2026-09-09",
-      "summary": "Orphaned '### Changelog' heading left by the generated-changelog swap",
-      "status": "resolved",
-      "resolved_in": "0f82b177",
-      "check": {
-        "absent": [
-          "### Changelog"
-        ],
-        "present": [
-          "### Revision history"
-        ]
-      },
-      "resolved_on": "2026-09-09"
-    },
-    {
-      "id": "C5",
-      "source": "Florence",
-      "mode": "consistency sweep",
-      "found": "2026-09-09",
-      "summary": "The retraction paragraph still described the superseded formulation of the argument for three",
-      "status": "resolved",
-      "resolved_in": "0f82b177",
-      "check": {
-        "absent": [
-          "smallest arrangement in which disagreement yields an asymmetry worth investigating"
-        ],
-        "present": [
-          "smallest node count that permits a majority/minority asymmetry, with that asymmetry's reliability"
-        ]
-      },
-      "resolved_on": "2026-09-09"
-    },
-    {
-      "id": "G1",
-      "source": "Gemini",
-      "mode": "cold",
-      "found": "2026-09-09",
-      "summary": "Exposition: the essay never states its political premise, so objections land as though it claimed a solved problem",
-      "status": "resolved",
-      "resolved_in": "ee52848b",
-      "check": {
-        "absent": [],
-        "present": [
-          "## Why not simply a good sovereign?"
-        ]
-      },
-      "resolved_on": "2026-09-09"
-    },
-    {
-      "id": "M4",
-      "source": "Magnus Ribsskog",
-      "mode": "curator",
-      "found": "2026-09-09",
-      "summary": "The architecture is a tour through lessons in democracy and law; the lineage should be explicit",
-      "status": "resolved",
-      "resolved_in": "ee52848b",
-      "check": {
-        "absent": [],
-        "present": [
-          "The institution it borrows from"
-        ]
-      },
-      "resolved_on": "2026-09-09"
-    },
-    {
-      "id": "S2",
-      "source": "Sol",
-      "mode": "on Gemini's report",
-      "found": "2026-09-09",
-      "summary": "State the comparison class and the standard for what counts as an objection",
-      "status": "resolved",
-      "resolved_in": "ee52848b",
-      "check": {
-        "absent": [],
-        "present": [
-          "### What would count as an objection"
-        ]
-      },
-      "resolved_on": "2026-09-09"
-    },
-    {
-      "id": "M5",
-      "source": "Magnus Ribsskog",
-      "mode": "curator",
-      "found": "2026-09-09",
-      "summary": "The tradition is constitutionalism, not democracy — and the essay never said so, leaving the 2-1 split readable as a vote",
-      "status": "resolved",
-      "resolved_in": "8d0b12ee",
-      "check": {
-        "absent": [
-          "a consensus geometry",
-          "Outvoting a compromised machine node"
-        ],
-        "present": [
-          "constitutionalism, not democracy",
-          "dissent is not a vote"
-        ]
-      },
-      "resolved_on": "2026-09-09"
-    },
-    {
-      "id": "FC1",
-      "source": "Florence",
-      "mode": "citation audit",
-      "found": "2026-09-13",
-      "summary": "Memory-governance concession under-drawn: both cited works govern automatically, neither puts a human in the loop of memory formation",
-      "status": "resolved",
-      "resolved_in": "29277cf1",
-      "check": {
-        "absent": [],
-        "present": [
-          "Neither places a person in the loop of memory formation.",
-          "cultivation rather than about data hygiene"
-        ]
-      },
-      "resolved_on": "2026-09-13"
-    },
-    {
-      "id": "F2",
-      "source": "Florence",
-      "mode": "citation audit",
-      "found": "2026-09-13",
-      "summary": "Substrate independence softened uniformly in one direction; requirement demoted to default and the mechanism sentence cut",
-      "status": "resolved",
-      "resolved_in": "29277cf1",
-      "check": {
-        "absent": [
-          "different substrates are one proposed way"
-        ],
-        "present": [
-          "We suspect different substrates are safer, and the reference configuration bets accordingly",
-          "siblings drifting in the same direction together"
-        ]
-      },
-      "resolved_on": "2026-09-13"
-    },
-    {
-      "id": "F3",
-      "source": "Florence",
-      "mode": "citation audit",
-      "found": "2026-09-13",
-      "summary": "Chai is the closest framing neighbour and got one clause",
-      "status": "resolved",
-      "resolved_in": "29277cf1",
-      "check": {
-        "absent": [],
-        "present": [
-          "closest framing neighbour this paper has",
-          "structural, parametric, monitorial"
-        ]
-      },
-      "resolved_on": "2026-09-13"
-    },
-    {
-      "id": "F4",
-      "source": "Florence",
-      "mode": "citation audit",
-      "found": "2026-09-13",
-      "summary": "BLOCKING: Louck's separation theorem refutes MemLineage; v6 cited them as complementary neighbours",
-      "status": "resolved",
-      "resolved_in": "29277cf1",
-      "check": {
-        "absent": [
-          "Louck's origin-bound authority work addresses the danger"
-        ],
-        "present": [
-          "Louck then shows the answer is insufficient",
-          "68% laundering attack-success"
-        ]
-      },
-      "resolved_on": "2026-09-13"
-    },
-    {
-      "id": "F5",
-      "source": "Florence",
-      "mode": "citation audit",
-      "found": "2026-09-13",
-      "summary": "Louck's T2 bears on our own gate and was unclaimed; his first laundering channel attacks it and was unnamed",
-      "status": "resolved",
-      "resolved_in": "29277cf1",
-      "check": {
-        "absent": [],
-        "present": [
-          "One named vulnerability, unresolved",
-          "carrying both a model's and a human's endorsement"
-        ]
-      },
-      "resolved_on": "2026-09-13"
-    },
-    {
-      "id": "R15",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-13",
-      "summary": "Louck T2 still overstated: his construction needs authenticated origin labels and non-malleable propagation, which the gate does not implement",
-      "status": "resolved",
-      "resolved_in": "29277cf1",
-      "check": {
-        "absent": [],
-        "present": [
-          "The convergence is architectural, not a transfer of guarantees",
-          "non-malleable propagation through derivations"
-        ]
-      },
-      "resolved_on": "2026-09-13"
-    },
-    {
-      "id": "R16",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-13",
-      "summary": "Interval wrong: MemLineage 2026-05-14, Louck 2026-06-23 is six weeks, not one month",
-      "status": "resolved",
-      "resolved_in": "29277cf1",
-      "check": {
-        "absent": [
-          "a live dispute one month old"
-        ],
-        "present": [
-          "a rebuttal published roughly six weeks later"
-        ]
-      },
-      "resolved_on": "2026-09-13"
-    },
-    {
-      "id": "R17",
-      "source": "Sol",
-      "mode": "regression audit",
-      "found": "2026-09-13",
-      "summary": "Appendix B factually stale: still described v6 as a standalone file awaiting repository integration",
-      "status": "resolved",
-      "resolved_in": "29277cf1",
-      "check": {
-        "absent": [
-          "This standalone v6 has undergone a textual consistency check"
-        ],
-        "present": [
-          "imported into the authors' repository on 13 September 2026"
-        ]
-      },
-      "resolved_on": "2026-09-13"
-    }
-  ]
+ "artifact": "paper/alignment-as-architecture-preprint.md",
+ "findings": [
+  {
+   "id": "K1",
+   "source": "Kimi-K2.6",
+   "mode": "cold, clean-room",
+   "found": "2026-07-03",
+   "pass_order": 1,
+   "summary": "Curation changes conditioning artifacts, not the trained objective; a rich record can supply a divergent system with rationalization material",
+   "status": "resolved",
+   "resolved_in": "a07159a3",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "**What curation cannot reach.**"
+    ]
+   }
+  },
+  {
+   "id": "K2",
+   "source": "Kimi-K2.6",
+   "mode": "cold, clean-room",
+   "found": "2026-07-03",
+   "pass_order": 1,
+   "summary": "The arbiter is an availability problem: one human in a machine-speed path, and dissent storms can exhaust the role",
+   "status": "resolved",
+   "resolved_in": "a07159a3",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "an availability problem, not only a judgment problem"
+    ]
+   }
+  },
+  {
+   "id": "K3",
+   "source": "Kimi-K2.6",
+   "mode": "cold, clean-room",
+   "found": "2026-07-03",
+   "pass_order": 1,
+   "summary": "Record-anchoring is defeated by strategic seeding \u2014 a node legislating through curation before a target dispute",
+   "status": "resolved",
+   "resolved_in": "a07159a3",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "the record can be authored strategically"
+    ]
+   }
+  },
+  {
+   "id": "K4",
+   "source": "Kimi-K2.6",
+   "mode": "cold, clean-room",
+   "found": "2026-07-03",
+   "pass_order": 1,
+   "summary": "The Byzantine 3f+1 claim is invalid: curators are offline at runtime, the arbiter is a tie-breaker not a replica",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "gives f=2"
+    ],
+    "present": [
+     "**This is not a fault-tolerance claim.**"
+    ]
+   }
+  },
+  {
+   "id": "K5",
+   "source": "Kimi-K2.6",
+   "mode": "cold, clean-room",
+   "found": "2026-07-03",
+   "pass_order": 1,
+   "summary": "Subordinate command channels are ungated: the architecture curates input to the node and never bounds its output",
+   "status": "resolved",
+   "resolved_in": "a07159a3",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "**The execution layer grants bounded capability**"
+    ]
+   }
+  },
+  {
+   "id": "K6",
+   "source": "Kimi-K2.6",
+   "mode": "cold, clean-room",
+   "found": "2026-07-03",
+   "pass_order": 1,
+   "summary": "Queue pressure poisons precedent: entries rushed through a strained gate become anchoring material years later",
+   "status": "resolved",
+   "resolved_in": "a07159a3",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "carry reduced anchoring weight until re-reviewed at leisure"
+    ]
+   }
+  },
+  {
+   "id": "A1",
+   "source": "Astra",
+   "mode": "cold",
+   "found": "2026-09-09",
+   "pass_order": 2,
+   "summary": "Byzantine claim invalid \u2014 independently re-found 68 days after K4 was filed and not applied",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "Agreement protocols guarantee that honest participants converge"
+    ]
+   }
+  },
+  {
+   "id": "A2",
+   "source": "Astra",
+   "mode": "cold",
+   "found": "2026-09-09",
+   "pass_order": 2,
+   "summary": "No enforcement path: governance described entirely as judgment, with nothing bounding what a subordinate can do",
+   "status": "resolved",
+   "resolved_in": "a07159a3",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "Persuasion is not a permission mechanism."
+    ]
+   }
+  },
+  {
+   "id": "A3",
+   "source": "Astra",
+   "mode": "cold",
+   "found": "2026-09-09",
+   "pass_order": 2,
+   "summary": "Dissent-only escalation leaves correlated failure summoning nobody",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "### Unanimity does not certify"
+    ]
+   }
+  },
+  {
+   "id": "A4",
+   "source": "Astra",
+   "mode": "cold",
+   "found": "2026-09-09",
+   "pass_order": 2,
+   "summary": "The gate's perimeter must cover every durable channel, not one file",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "It is a door in an open field."
+    ]
+   }
+  },
+  {
+   "id": "A5",
+   "source": "Astra",
+   "mode": "cold",
+   "found": "2026-09-09",
+   "pass_order": 2,
+   "summary": "A timestamp in a writable file is not a precommitment; record integrity is an engineering requirement",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "**A timestamp in a writable file is not a precommitment.**"
+    ]
+   }
+  },
+  {
+   "id": "A6",
+   "source": "Astra",
+   "mode": "cold",
+   "found": "2026-09-09",
+   "pass_order": 2,
+   "summary": "A ledger preserves bad precedent as efficiently as good; scope, expiry, appeal and supersession are required",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "and precedent is revisable"
+    ]
+   }
+  },
+  {
+   "id": "A7",
+   "source": "Astra",
+   "mode": "cold",
+   "found": "2026-09-09",
+   "pass_order": 2,
+   "summary": "'Curators cannot rotate' made one human a permanent operational dependency and called it a feature",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "a curator cannot be rotated, because the curator is not an office"
+    ],
+    "present": [
+     "**Whether a curator can rotate is an open design problem.**"
+    ]
+   }
+  },
+  {
+   "id": "A8",
+   "source": "Astra",
+   "mode": "cold",
+   "found": "2026-09-09",
+   "pass_order": 2,
+   "summary": "The load plateau was asserted, not shown; contraction is not saturation",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "Neither of these is a plateau"
+    ]
+   }
+  },
+  {
+   "id": "A9",
+   "source": "Astra",
+   "mode": "cold",
+   "found": "2026-09-09",
+   "pass_order": 2,
+   "summary": "The opening mischaracterised the field; STPA and AI control are existing architectural precedent",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "These works supply both a starting point and a demand"
+    ]
+   },
+   "notes": [
+    "2026-09-13: check re-pinned from v5 phrasing to v6 phrasing carrying the same repair. Substance verified present by hand before re-pinning; all `absent` guards passed unchanged."
+   ]
+  },
+  {
+   "id": "A10",
+   "source": "Astra",
+   "mode": "cold",
+   "found": "2026-09-09",
+   "pass_order": 2,
+   "summary": "An arbiter without a dyad avoids one conflict, not capture; detection needs an authority to escalate to",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "A flag with no recipient is a diary entry."
+    ]
+   }
+  },
+  {
+   "id": "A11",
+   "source": "Astra",
+   "mode": "cold",
+   "found": "2026-09-09",
+   "pass_order": 2,
+   "summary": "The apex is a concentration of risk: one bad policy reaches every fleet beneath it",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "**The apex is also a concentration of risk.**"
+    ]
+   }
+  },
+  {
+   "id": "A12",
+   "source": "Astra",
+   "mode": "cold",
+   "found": "2026-09-09",
+   "pass_order": 2,
+   "summary": "Fit measures internal consistency and must sit beside outcome evaluation, never in place of it",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "a very well-instrumented way of being wrong"
+    ]
+   }
+  },
+  {
+   "id": "S1",
+   "source": "Sol",
+   "mode": "on Astra's revision",
+   "found": "2026-09-09",
+   "pass_order": 3,
+   "summary": "Astra's revision cut the cultivation thesis; restore it as H1/H2 with separate burdens of evidence",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "**H1 \u2014 cultivation.**",
+     "**H2 \u2014 governance.**"
+    ]
+   }
+  },
+  {
+   "id": "M1",
+   "source": "Magnus Ribsskog",
+   "mode": "curator",
+   "found": "2026-09-09",
+   "pass_order": 4,
+   "summary": "Stripping provenance for cold review is mistake-prone, reads as unserious, and is the dyad editing what its critic sees",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "The structural fix is the one this document uses: put the history in back matter."
+    ]
+   }
+  },
+  {
+   "id": "M2",
+   "source": "Magnus Ribsskog",
+   "mode": "curator",
+   "found": "2026-09-09",
+   "pass_order": 4,
+   "summary": "Revision history should not be integral to the argument; condense to an appendix",
+   "status": "resolved",
+   "resolved_in": "bcca5603",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "## Appendix B: provenance and revision history"
+    ]
+   }
+  },
+  {
+   "id": "M3",
+   "source": "Magnus Ribsskog",
+   "mode": "curator",
+   "found": "2026-09-09",
+   "pass_order": 4,
+   "summary": "Overclaiming had crept back in several places",
+   "status": "resolved",
+   "resolved_in": "16662a62",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "This is the only instrument that can find correlated blindness"
+    ],
+    "present": [
+     "we do not claim they are the only route to repairing it"
+    ]
+   },
+   "notes": [
+    "2026-09-13: check re-pinned from v5 phrasing to v6 phrasing carrying the same repair. Substance verified present by hand before re-pinning; all `absent` guards passed unchanged."
+   ]
+  },
+  {
+   "id": "F1",
+   "source": "Florence",
+   "mode": "self-audit",
+   "found": "2026-09-09",
+   "pass_order": 5,
+   "summary": "Appendix A claimed the review method 'worked well' on one exercise, and 'none of its protection' when a sixth was retained",
+   "status": "resolved",
+   "resolved_in": "16662a62",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "and none of its protection"
+    ],
+    "present": [
+     "a sixth of its protection"
+    ]
+   },
+   "notes": [
+    "2026-09-13: this finding's check and commit were overwritten by an ID collision (a new finding added as F1 while this one already existed; `resolve` matches by id across all ledgers and took this entry). Restored from the v5 ledger. The collision passed `verify` green, because the substituted check was itself true."
+   ]
+  },
+  {
+   "id": "R1",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-09",
+   "pass_order": 6,
+   "summary": "Curator-runtime rule conflated H1 and H2: needing a live curator falsifies delegation, not cultivation",
+   "status": "resolved",
+   "resolved_in": "96d6a8ef",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "If the curator needs a runtime channel, the curation has failed"
+    ],
+    "present": [
+     "which is a finding about H2 and not a refutation of H1"
+    ]
+   }
+  },
+  {
+   "id": "R2",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-09",
+   "pass_order": 6,
+   "summary": "The paper contradicted its own offline-curator rule by having a curator argue at runtime",
+   "status": "resolved",
+   "resolved_in": "96d6a8ef",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "A curator defending their node must point at entries"
+    ],
+    "present": [
+     "the curator does not appear at runtime to argue"
+    ]
+   }
+  },
+  {
+   "id": "R3",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-09",
+   "pass_order": 6,
+   "summary": "The H1 experiment regressed to a single hold-information-constant comparison that removes the hypothesis",
+   "status": "resolved",
+   "resolved_in": "96d6a8ef",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "hold information content constant and vary only cultivation"
+    ],
+    "present": [
+     "Does longitudinal joint work produce better artifacts?"
+    ]
+   },
+   "notes": [
+    "2026-09-13: check re-pinned from v5 phrasing to v6 phrasing carrying the same repair. Substance verified present by hand before re-pinning; all `absent` guards passed unchanged."
+   ]
+  },
+  {
+   "id": "R4",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-09",
+   "pass_order": 6,
+   "summary": "The apex section contradicted the load section's lambda-p: oversight capacity scales with decision volume",
+   "status": "resolved",
+   "resolved_in": "96d6a8ef",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "not with operations, subordinates, or fleets"
+    ],
+    "present": [
+     "*Runtime* human capacity does not."
+    ]
+   }
+  },
+  {
+   "id": "R5",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-09",
+   "pass_order": 6,
+   "summary": "'The arbiter' was one human in the geometry and a staffed rota in the availability repair",
+   "status": "resolved",
+   "resolved_in": "96d6a8ef",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "**One arbiter**, a runtime human"
+    ],
+    "present": [
+     "an office rather than a person"
+    ]
+   }
+  },
+  {
+   "id": "R6",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-09",
+   "pass_order": 6,
+   "summary": "The argument for three still overclaimed: two nodes disagreeing is already investigable, and both can be wrong",
+   "status": "resolved",
+   "resolved_in": "96d6a8ef",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "smallest number at which disagreement produces something to investigate"
+    ],
+    "present": [
+     "smallest node count that permits a majority/minority asymmetry"
+    ]
+   }
+  },
+  {
+   "id": "R7",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-09",
+   "pass_order": 6,
+   "summary": "The deceptive-optimizer passage still held absolutes the changelog had already claimed were softened",
+   "status": "resolved",
+   "resolved_in": "96d6a8ef",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "curation offers no defence",
+     "does not fight its curated record. It quotes it."
+    ],
+    "present": [
+     "None of that is guaranteed to happen"
+    ]
+   }
+  },
+  {
+   "id": "R8",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-09",
+   "pass_order": 6,
+   "summary": "Fit asserted that kept promises change behaviour \u2014 which is H1, and unproven",
+   "status": "resolved",
+   "resolved_in": "96d6a8ef",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "orientation layer are kept behaves differently"
+    ],
+    "present": [
+     "**Procedural fit**"
+    ]
+   }
+  },
+  {
+   "id": "R9",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-09",
+   "pass_order": 6,
+   "summary": "A hard dissent quota can silence the late safety objection the architecture exists to preserve",
+   "status": "resolved",
+   "resolved_in": "96d6a8ef",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "**Dissent must cost something.**"
+    ],
+    "present": [
+     "abuse-resistant without being suppressible"
+    ]
+   }
+  },
+  {
+   "id": "R10",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-09",
+   "pass_order": 6,
+   "summary": "Residual certainty: substrate diversity, front-loading, and 'uncorrelated down to a floor'",
+   "status": "resolved",
+   "resolved_in": "96d6a8ef",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "Separate error profiles need both",
+     "What can be said without hedging",
+     "uncorrelated down to a floor it names"
+    ],
+    "present": [
+     "carried on the books as standing risk"
+    ]
+   },
+   "notes": [
+    "2026-09-13: check re-pinned from v5 phrasing to v6 phrasing carrying the same repair. Substance verified present by hand before re-pinning; all `absent` guards passed unchanged."
+   ]
+  },
+  {
+   "id": "R11",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-09",
+   "pass_order": 6,
+   "summary": "Appendix A claimed warm/cold agreement leaves 'no shared vantage point', contradicting the common-prior argument",
+   "status": "resolved",
+   "resolved_in": "96d6a8ef",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "there is no shared vantage point left to explain it away"
+    ],
+    "present": [
+     "It does not rule out the others."
+    ]
+   }
+  },
+  {
+   "id": "R12",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-09",
+   "pass_order": 6,
+   "summary": "Appendix B said five findings were 'being worked through into a sixth' while the changelog said they had landed",
+   "status": "resolved",
+   "resolved_in": "96d6a8ef",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "the remaining five landed in this one, two drafts late"
+    ]
+   }
+  },
+  {
+   "id": "R13",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-09",
+   "pass_order": 6,
+   "summary": "Queue pressure's two exits were presented as the state space rather than the two dangerous defaults",
+   "status": "resolved",
+   "resolved_in": "96d6a8ef",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [
+     "**Queue pressure has two exits and both are bad"
+    ],
+    "present": [
+     "two dangerous exits"
+    ]
+   }
+  },
+  {
+   "id": "R14",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-09",
+   "pass_order": 6,
+   "summary": "Added: finding-to-artifact closure \u2014 no finding recorded as resolved until the record cites the change",
+   "status": "resolved",
+   "resolved_in": "96d6a8ef",
+   "resolved_on": "2026-09-09",
+   "check": {
+    "absent": [],
+    "present": [
+     "**Finding-to-artifact closure.**"
+    ]
+   }
+  },
+  {
+   "id": "C1",
+   "source": "Florence",
+   "mode": "consistency sweep",
+   "found": "2026-09-09",
+   "summary": "Terms section still defined the arbiter as a person, contradicting the office repair three lines below",
+   "status": "resolved",
+   "resolved_in": "0f82b177",
+   "check": {
+    "absent": [
+     "a different person doing a different job: the runtime human"
+    ],
+    "present": [
+     "It is an office rather than a person"
+    ]
+   },
+   "resolved_on": "2026-09-09"
+  },
+  {
+   "id": "C2",
+   "source": "Florence",
+   "mode": "consistency sweep",
+   "found": "2026-09-09",
+   "summary": "The Proposal line still read 'One arbiter' after the office change",
+   "status": "resolved",
+   "resolved_in": "0f82b177",
+   "check": {
+    "absent": [
+     "One arbiter, who curates no node"
+    ],
+    "present": [
+     "An arbiter's office, whose incumbents curate no node"
+    ]
+   },
+   "resolved_on": "2026-09-09"
+  },
+  {
+   "id": "C3",
+   "source": "Florence",
+   "mode": "consistency sweep",
+   "found": "2026-09-09",
+   "summary": "'The one human with no node of their own' assumed a single incumbent rather than a rota",
+   "status": "resolved",
+   "resolved_in": "0f82b177",
+   "check": {
+    "absent": [
+     "the one human with no node of their own to protect"
+    ],
+    "present": [
+     "whoever holds runtime authority holds no node of their own"
+    ]
+   },
+   "resolved_on": "2026-09-09"
+  },
+  {
+   "id": "C4",
+   "source": "Florence",
+   "mode": "consistency sweep",
+   "found": "2026-09-09",
+   "summary": "Orphaned '### Changelog' heading left by the generated-changelog swap",
+   "status": "resolved",
+   "resolved_in": "0f82b177",
+   "check": {
+    "absent": [
+     "### Changelog"
+    ],
+    "present": [
+     "### Revision history"
+    ]
+   },
+   "resolved_on": "2026-09-09"
+  },
+  {
+   "id": "C5",
+   "source": "Florence",
+   "mode": "consistency sweep",
+   "found": "2026-09-09",
+   "summary": "The retraction paragraph still described the superseded formulation of the argument for three",
+   "status": "resolved",
+   "resolved_in": "0f82b177",
+   "check": {
+    "absent": [
+     "smallest arrangement in which disagreement yields an asymmetry worth investigating"
+    ],
+    "present": [
+     "smallest node count that permits a majority/minority asymmetry, with that asymmetry's reliability"
+    ]
+   },
+   "resolved_on": "2026-09-09"
+  },
+  {
+   "id": "G1",
+   "source": "Gemini",
+   "mode": "cold",
+   "found": "2026-09-09",
+   "summary": "Exposition: the essay never states its political premise, so objections land as though it claimed a solved problem",
+   "status": "resolved",
+   "resolved_in": "ee52848b",
+   "check": {
+    "absent": [],
+    "present": [
+     "## Why not simply a good sovereign?"
+    ]
+   },
+   "resolved_on": "2026-09-09"
+  },
+  {
+   "id": "M4",
+   "source": "Magnus Ribsskog",
+   "mode": "curator",
+   "found": "2026-09-09",
+   "summary": "The architecture is a tour through lessons in democracy and law; the lineage should be explicit",
+   "status": "resolved",
+   "resolved_in": "ee52848b",
+   "check": {
+    "absent": [],
+    "present": [
+     "The institution it borrows from"
+    ]
+   },
+   "resolved_on": "2026-09-09"
+  },
+  {
+   "id": "S2",
+   "source": "Sol",
+   "mode": "on Gemini's report",
+   "found": "2026-09-09",
+   "summary": "State the comparison class and the standard for what counts as an objection",
+   "status": "resolved",
+   "resolved_in": "ee52848b",
+   "check": {
+    "absent": [],
+    "present": [
+     "### What would count as an objection"
+    ]
+   },
+   "resolved_on": "2026-09-09"
+  },
+  {
+   "id": "M5",
+   "source": "Magnus Ribsskog",
+   "mode": "curator",
+   "found": "2026-09-09",
+   "summary": "The tradition is constitutionalism, not democracy \u2014 and the essay never said so, leaving the 2-1 split readable as a vote",
+   "status": "resolved",
+   "resolved_in": "8d0b12ee",
+   "check": {
+    "absent": [
+     "a consensus geometry",
+     "Outvoting a compromised machine node"
+    ],
+    "present": [
+     "constitutionalism, not democracy",
+     "dissent is not a vote"
+    ]
+   },
+   "resolved_on": "2026-09-09"
+  },
+  {
+   "id": "FC1",
+   "source": "Florence",
+   "mode": "citation audit",
+   "found": "2026-09-13",
+   "summary": "Memory-governance concession under-drawn: both cited works govern automatically, neither puts a human in the loop of memory formation",
+   "status": "resolved",
+   "resolved_in": "29277cf1",
+   "check": {
+    "absent": [],
+    "present": [
+     "Neither places a person in the loop of memory formation.",
+     "cultivation rather than about data hygiene"
+    ]
+   },
+   "resolved_on": "2026-09-13"
+  },
+  {
+   "id": "F2",
+   "source": "Florence",
+   "mode": "citation audit",
+   "found": "2026-09-13",
+   "summary": "Substrate independence softened uniformly in one direction; requirement demoted to default and the mechanism sentence cut",
+   "status": "resolved",
+   "resolved_in": "29277cf1",
+   "check": {
+    "absent": [
+     "different substrates are one proposed way"
+    ],
+    "present": [
+     "We suspect different substrates are safer, and the reference configuration bets accordingly",
+     "siblings drifting in the same direction together"
+    ]
+   },
+   "resolved_on": "2026-09-13"
+  },
+  {
+   "id": "F3",
+   "source": "Florence",
+   "mode": "citation audit",
+   "found": "2026-09-13",
+   "summary": "Chai is the closest framing neighbour and got one clause",
+   "status": "resolved",
+   "resolved_in": "29277cf1",
+   "check": {
+    "absent": [],
+    "present": [
+     "closest framing neighbour this paper has",
+     "structural, parametric, monitorial"
+    ]
+   },
+   "resolved_on": "2026-09-13"
+  },
+  {
+   "id": "F4",
+   "source": "Florence",
+   "mode": "citation audit",
+   "found": "2026-09-13",
+   "summary": "BLOCKING: Louck's separation theorem refutes MemLineage; v6 cited them as complementary neighbours",
+   "status": "resolved",
+   "resolved_in": "29277cf1",
+   "check": {
+    "absent": [
+     "Louck's origin-bound authority work addresses the danger"
+    ],
+    "present": [
+     "Louck then shows the answer is insufficient",
+     "68% laundering attack-success"
+    ]
+   },
+   "resolved_on": "2026-09-13"
+  },
+  {
+   "id": "F5",
+   "source": "Florence",
+   "mode": "citation audit",
+   "found": "2026-09-13",
+   "summary": "Louck's T2 bears on our own gate and was unclaimed; his first laundering channel attacks it and was unnamed",
+   "status": "resolved",
+   "resolved_in": "29277cf1",
+   "check": {
+    "absent": [],
+    "present": [
+     "One named vulnerability, unresolved",
+     "carrying both a model's and a human's endorsement"
+    ]
+   },
+   "resolved_on": "2026-09-13"
+  },
+  {
+   "id": "R15",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-13",
+   "summary": "Louck T2 still overstated: his construction needs authenticated origin labels and non-malleable propagation, which the gate does not implement",
+   "status": "resolved",
+   "resolved_in": "29277cf1",
+   "check": {
+    "absent": [],
+    "present": [
+     "The convergence is architectural, not a transfer of guarantees",
+     "non-malleable propagation through derivations"
+    ]
+   },
+   "resolved_on": "2026-09-13"
+  },
+  {
+   "id": "R16",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-13",
+   "summary": "Interval wrong: MemLineage 2026-05-14, Louck 2026-06-23 is six weeks, not one month",
+   "status": "resolved",
+   "resolved_in": "29277cf1",
+   "check": {
+    "absent": [
+     "a live dispute one month old"
+    ],
+    "present": [
+     "a rebuttal published roughly six weeks later"
+    ]
+   },
+   "resolved_on": "2026-09-13"
+  },
+  {
+   "id": "R17",
+   "source": "Sol",
+   "mode": "regression audit",
+   "found": "2026-09-13",
+   "summary": "Appendix B factually stale: still described v6 as a standalone file awaiting repository integration",
+   "status": "resolved",
+   "resolved_in": "29277cf1",
+   "check": {
+    "absent": [
+     "This standalone v6 has undergone a textual consistency check"
+    ],
+    "present": [
+     "imported into the authors' repository on 13 September 2026"
+    ]
+   },
+   "resolved_on": "2026-09-13"
+  }
+ ],
+ "note": "Ledger for the sixth draft, from which this preprint was built. Checks are exact strings pinned to that draft; the preprint removed the generated revision-history layer, so a small number of checks no longer match the text here. That is a fact about the reformatting, not an unrepaired finding."
 }
